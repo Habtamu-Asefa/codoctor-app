@@ -63,21 +63,7 @@ export async function OpenAIStream(payload: OpenAIStreamPayload) {
                     
                 }
             }
-            // const reader = response.body?.getReader()
-            // if (!reader) {
-            //     return controller.close()
-            // }
-
-            // while (true) {
-            //     const { done, value } = await reader.read()
-            //     if (done) {
-            //         controller.close()
-            //         break
-            //     }
-
-            //     controller.enqueue(value)
-            // }
-
+            
         const parser = createParser(onParse)
 
         for await (const chunk of res.body as any) {

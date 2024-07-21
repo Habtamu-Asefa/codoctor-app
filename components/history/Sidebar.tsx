@@ -12,8 +12,8 @@ const Sidebar: React.FC = () => {
 
     return (
         <div className="p-4 space-y-3 mt-2 min-h-screen">
-            <div className="flex items-center space-x-6 mb-4 ml-4 border-b-2 p-2 sticky top-0 shadow bottom-0">
-                <Image src="/logo.png" alt="Logo" width={100} height={100} className="rounded-sm" />
+            <div className="flex items-center space-x-6 mb-4 ml-4 border-b-2 p-2 sticky top-0  bottom-0">
+                <Image src="/logo.png" alt="Logo" width={100} height={100} className="rounded-sm " />
                 <h1 className="text-xl font-bold text-blue-400">Co-Doctor</h1>
             </div>
             <div className=""></div>
